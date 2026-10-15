@@ -1,0 +1,29 @@
+# Dependencies
+node_modules/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# Build output
+frontend/dist/
+coverage/
+
+# Environment (keep .env.example files tracked)
+frontend/.env.local
+
+# SQLite atomic-write temp file and automatic pre-migration backups
+backend/data/*.tmp
+backend/data/backups/
+
+# User-uploaded files (attachments, profile photos)
+backend/uploads/
+
+# Editors / OS
+.DS_Store
+.idea/
+.vscode/*
+!.vscode/extensions.json
+*.swp

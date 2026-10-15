@@ -1,0 +1,41 @@
+{
+  "name": "smart-workforce",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Smart Workforce & Task Allocation System: Express + SQLite API with a React frontend",
+  "author": {
+    "name": "Md Forid Sheikh",
+    "url": "https://github.com/forid0000"
+  },
+  "homepage": "https://github.com/forid0000/Smart-Workforce",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/forid0000/Smart-Workforce.git"
+  },
+  "bugs": {
+    "url": "https://github.com/forid0000/Smart-Workforce/issues"
+  },
+  "license": "ISC",
+  "keywords": [
+    "task-allocation",
+    "workforce-management",
+    "react",
+    "express",
+    "sqlite",
+    "foridsheikh"
+  ],
+  "scripts": {
+    "setup": "npm install && npm --prefix backend install && npm --prefix frontend install",
+    "dev": "concurrently -n api,web -c yellow,cyan \"npm --prefix backend run dev\" \"npm --prefix frontend run dev\"",
+    "build": "npm --prefix frontend run build",
+    "start": "npm --prefix backend start",
+    "test": "npm --prefix backend test",
+    "lint": "npm --prefix frontend run lint",
+    "db:reset": "npm --prefix backend run db:reset",
+    "db:migrate": "npm --prefix backend run db:migrate",
+    "db:status": "npm --prefix backend run db:status"
+  },
+  "devDependencies": {
+    "concurrently": "^10.0.6"
+  }
+}

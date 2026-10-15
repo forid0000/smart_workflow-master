@@ -1,0 +1,64 @@
+{
+  "name": "smart-workforce-backend",
+  "version": "1.0.0",
+  "description": "REST API Backend for Smart Workforce & Task Allocation System",
+  "author": {
+    "name": "Md Forid Sheikh",
+    "url": "https://github.com/forid0000"
+  },
+  "homepage": "https://github.com/forid0000/Smart-Workforce",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/forid0000/Smart-Workforce.git"
+  },
+  "bugs": {
+    "url": "https://github.com/forid0000/Smart-Workforce/issues"
+  },
+  "license": "ISC",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "seed": "node src/config/seed.js",
+    "db:reset": "node src/config/seed.js",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --runInBand",
+    "db:migrate": "node src/config/migrate.js",
+    "db:status": "node src/config/status.js"
+  },
+  "keywords": [
+    "express",
+    "sqlite",
+    "sql.js",
+    "smart-allocation",
+    "task-management"
+  ],
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-rate-limit": "^7.2.0",
+    "helmet": "^7.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^2.4.0",
+    "nodemailer": "10.0.12",
+    "sql.js": "^1.12.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "jest": "^29.7.0",
+    "supertest": "^7.0.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "transform": {},
+    "setupFiles": [
+      "<rootDir>/tests/setupEnv.js"
+    ]
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

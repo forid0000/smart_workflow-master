@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /app/
+Disallow: /api/
+
+# Crafted by Md Forid Sheikh · https://github.com/forid0000
